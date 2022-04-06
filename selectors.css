@@ -10,7 +10,7 @@ li {
      color: white;
  }
 
- li[data-description*="even"]{
+a[title*="popular"]{
     font-size: 24px;
 }
 #special + li span{
