@@ -1,3 +1,21 @@
+.already-learned ul  li {
+    background-color: green;
+    color: white;
+}
+.to-be-learned li {
+    background-color: orange;
+    color: green;
+}
+.already-learned code{
+    background-color: orange;
+}
+.to-be-learned code {
+    background-color: green;
+}
+
+
+/*
+
 li {
     margin-bottom: 16px;
 }
