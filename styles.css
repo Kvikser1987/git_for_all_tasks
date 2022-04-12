@@ -1,4 +1,6 @@
-
+li {
+    margin-top: 16px;
+}
  ul>li:first-child>span{
     background-color:red;
     color:white;
@@ -7,9 +9,9 @@
      background-color: black;
      color:white;
  }
- ul>li:nth-of-type(even){
+ ul>li:nth-of-type(odd){
      margin-left: 16px;
  }
- .paragraphs p:nth-last-of-type(odd){
-    background-color: blue;
+ .paragraphs p:nth-last-of-type(even){
+    background-color:grey;
  }
