@@ -1,5 +1,7 @@
-li span{
-    border-bottom: 16px;
+ ul li span {
+    margin-bottom: 16px;
+   
+    display: inline-block;
 }
  ul>li:first-child>span{
     background-color:red;
