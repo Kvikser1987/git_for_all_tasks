@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Float</title>
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -10,49 +10,35 @@
       crossorigin="anonymous"
     />
     <style>
-      *{
-        box-sizing: border-box;
-      }
-      .block_red{
-        width: 20%;
-        float: left;
-        height: 200px;
-        background-color: red;
-      }
-      .block_green{
-        width: 20%;
-        float: left;
-        height: 200px;
-        background-color: green;
-      }
-      .block_blue{
-        width: 20%;
-        float: left;
-        height: 200px;
-        background-color: blue;
-      }
-      .block_yellow{
-        width: 20%;
-        float: left;
-        height: 200px;
+      .header{
+        height: 50px;
         background-color: yellow;
       }
-      .block_black{
-        width: 20%;
-        float: left;
-        height: 200px;
-        background-color: black;
+      .footer{
+        height: 50px;
+        background-color: green;
+        clear: both;
       }
-
+      .content{
+        float: left;
+        width: 80%;
+        background-color: pink;
+        height: 500px;
+      }
+      .sidebar{
+        float: left;
+        width: 20%;
+        height: 500px;
+        background-color: grey;
+      }
 
     </style>
   </head>
 
   <body>
-    <div class="block_red"></div>
-    <div class="block_green"></div>
-    <div class="block_blue"></div>
-    <div class="block_yellow"></div>
-    <div class="block_black"></div>
+    <header class="header">Header</header>
+    <main class="content">Main</main>
+    <aside class="sidebar">Sidebar</aside>
+    <footer class="footer">Footer</footer>
   </body>
 </html>
