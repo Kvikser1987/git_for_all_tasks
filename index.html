@@ -10,35 +10,93 @@
       crossorigin="anonymous"
     />
     <style>
-      .header{
-        height: 50px;
-        background-color: yellow;
+      *{
+        box-sizing: border-box;
       }
-      .footer{
-        height: 50px;
-        background-color: green;
-        clear: both;
+      .header{
+        background-color: darkturquoise;
+        height: 40px;
+      }
+      .navigation{
+        margin: auto;
+      }
+      .nav-item{
+       
+        float: left;
+        display: inline-block;
+        margin-left: 16px;
+        margin-top:10px ;
+        color: white;
       }
       .content{
-        float: left;
-        width: 80%;
-        background-color: pink;
-        height: 500px;
+        position:relative;
+        background-color: beige;
+        height: 5000px;
       }
-      .sidebar{
-        float: left;
-        width: 20%;
-        height: 500px;
+      .head{
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        position:relative;
+        left: 300px;
+        top: 200px;
+      
+        
+      }
+      .ear{
+        height: 60px;
+        width: 40px;
+        background-color: brown;
+        
+      }
+      .ear_right{
+        position: absolute;
+        left:-40px;
+        top:-60px;
+      }
+      .ear_left{
+        position: absolute;
+        left: 100px;
+        top:-60px;
+        margin-left: 100px;
+      }
+      .eye{
+        width: 30px;
+        height: 30px;
+        margin: 30px;
+        border-radius: 50%;
         background-color: grey;
       }
-
+      .eye_right{
+        top:60px;
+        position: absolute;
+        left: 100px;
+      }
+      .eye_left{
+        left:10px;
+        top:60px;
+        position: absolute;
+      }
     </style>
   </head>
 
   <body>
-    <header class="header">Header</header>
-    <main class="content">Main</main>
-    <aside class="sidebar">Sidebar</aside>
-    <footer class="footer">Footer</footer>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Products</li>
+          <li class="nav-item">Contacts</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="head">
+        <div class="ear ear_right"></div>
+        <div class="ear ear_left"></div>
+        <div class="eye eye_right"></div>
+        <div class="eye eye_left"></div>
+      </div>
+    </main>
   </body>
 </html>
