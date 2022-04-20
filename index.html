@@ -14,19 +14,24 @@
         box-sizing: border-box;
       }
       .header{
-        z-index: -10ъ;
+        position: fixed; /* Фиксированное позиционирование */
+    left: 0; right: 0; /* Вся ширина */
+    top: 0; 
         background-color: darkturquoise;
         height: 40px;
-        position: fixed;
+       
+   
       }
       .navigation{
-        
+            
         margin-left:16px;
       }
       .nav-list{
+        
         margin: 0;
       }
       .nav-item{
+        
         margin-right:11px;
         height: 40px;
         display: inline-block;
@@ -36,14 +41,15 @@
         padding-top: 11px;
        
         color: white;
+        
       }
       .content{
       
-        position:relative;
         background-color: beige;
         height: 5000px;
       }
       .head{
+     
         height: 200px;
         width: 200px;
         background-color: aquamarine;
