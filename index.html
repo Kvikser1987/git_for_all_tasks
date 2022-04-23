@@ -10,113 +10,47 @@
       crossorigin="anonymous"
     />
     <style>
-      *{
-        box-sizing: border-box;
+      html {
+        font-size: 24px;
       }
-      .header{
-        z-index: 1;
-        position: fixed; /* Фиксированное позиционирование */
-        left: 0; right: 0; /* Вся ширина */
-         top: 0; 
-        background-color: darkturquoise;
-        height: 40px;
-       
+
+      div {
+        margin: 16px;
+        border: 1px solid burlywood;
       }
-      .navigation{
-            
-        margin-left:16px;
+
+      .horizontal > span {
+        background-color: aqua;
       }
-      .nav-list{
-        
-        margin: 0;
+      .horizontal {
+          height: 50px;
+          display: flex;
+         justify-content: space-around;
       }
-      .nav-item{
-        
-        margin-right:11px;
-        height: 40px;
-        display: inline-block;
-        
-       
-        text-align: center;
-        padding-top: 11px;
-       
-        color: white;
-        
-      }
-      .content{
-        
-        background-color: beige;
-        height: 5000px;
-      }
-      .head{
-        
-        top:150px;
-        font: 1em sans-serif;
+      .vertical {
         height: 200px;
-        width: 200px;
-        background-color: aquamarine;
-        position:absolute;
-        margin-left: 200px;
-        margin-right: auto;
-        
-     
-                     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
       }
-      .ear{
-        height: 60px;
-        width: 40px;
-        background-color: brown;
-        
-      }
-      .ear_right{
-        
-        position: absolute;
-        left:-40px;
-        top:-60px;
-      }
-      .ear_left{
-        position: absolute;
-        left: 100px;
-        top:-60px;
-        margin-left: 100px;
-      }
-      .eye{
-        width: 30px;
-        height: 30px;
-        margin: 30px;
-        border-radius: 50%;
-        background-color: grey;
-      }
-      .eye_right{
-        top:50px;
-        position: absolute;
-        left: 100px;
-      }
-      .eye_left{
-        left:10px;
-        top:50px;
-        position: absolute;
+      .vertical > span {
+        background-color: coral;
       }
     </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header class="header">
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">Products</li>
-          <li class="nav-item">Contacts</li>
-        </ul>
-      </nav>
-    </header>
-    <main class="content">
-      <div class="head">
-        <div class="ear ear_right"></div>
-        <div class="ear ear_left"></div>
-        <div class="eye eye_right"></div>
-        <div class="eye eye_left"></div>
-      </div>
-    </main>
+    <div class="horizontal">
+      <span>Span1</span>
+      <span>Span2</span>
+      <span>Span3</span>
+    </div>
+    <div class="vertical">
+      <span>Span1</span>
+      <span>Span2</span>
+      <span>Span3</span>
+    </div>
   </body>
 </html>
